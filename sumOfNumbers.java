@@ -3,10 +3,10 @@ package numbers;
 import java.util.Scanner;
 
 public class sumOfNumbers {
-	     static int SumOfEvenNumbers(int Start,int last)
+	     static int SumOfEvenNumbers(int firstnumber,int lastnumber)
 	     {
 	    	 int index,sum = 0;
-	    	 for(index=Start;index<=last;index++)
+	    	 for(index=firstnumber;index<=lastnumber;index++)
 	    	 {
 	    		 if(index%2==0)
 	    		 {
@@ -15,10 +15,10 @@ public class sumOfNumbers {
 	    	 }
 	    	 return sum;
 	     }
-static int SumOfoddNumbers(int Start,int last)
+static int SumOfoddNumbers(int firstnumber,int lastnumber)
 {
 	int index,sum=0;
-	for(index=Start;index<=last;index++)
+	for(index=firstnumber;index<=lastnumber;index++)
 	{
 		if(index%2!=0)
 		{
@@ -33,11 +33,11 @@ static int SumOfoddNumbers(int Start,int last)
 	 Scanner sc= new Scanner(System.in);
 	 int Start,last;
 	 System.out.println("Start=");
-	 Start=sc.nextInt();
+	 firstnumber=sc.nextInt();
      System.out.println("last=");
-      last = sc.nextInt();
-     System.out.println("Sumofeven="+SumOfEvenNumbers(Start,last));
-     System.out.println("Sumofodd="+SumOfoddNumbers(Start,last));
+      lastnumber = sc.nextInt();
+     System.out.println("Sumofeven="+SumOfEvenNumbers(firstnumber,lastnumber));
+     System.out.println("Sumofodd="+SumOfoddNumbers(firstnumber,lastnumber));
      sc.close();
 	 
  }
