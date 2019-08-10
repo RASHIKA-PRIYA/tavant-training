@@ -3,26 +3,26 @@ package grademarkswitchcase;
 import java.util.Scanner;
 
 public class Gradeverification {
-	 public static String markGrade(int a)
+	 public static String markGrade(int number)
 	 {
 		 for(int index=1;index<=4;index++)
 		 {
 			 switch(index)
 			 {
 			 case 1:
-				 if(a>=90)
+				 if(number>=90)
 					 return "Grade A";
 				 break;
 			 case 2:
-				 if(a>=75&&a<90)
+				 if(number>=75&&a<90)
 					 return "Grade B";
 			     break;
 			 case 3:
-				 if(a>=60&&a<75)
+				 if(number>=60&&a<75)
 					 return "Grade C";
 				 break;
 			 case 4:
-				 if(a<60)
+				 if(number<60)
 					 return "Grade D";
 				
 			 }
