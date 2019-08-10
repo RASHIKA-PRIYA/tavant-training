@@ -32,12 +32,12 @@ public class Gradeverification {
 	 }
 	 public static void main(String[] args)
 	 {
-		 Scanner sc = new Scanner(System.in);
-		 int a;
+		 Scanner scanner = new Scanner(System.in);
+		 int number;
 		 System.out.println("Grade = ");
-		 a = sc.nextInt();
-		 System.out.print(markGrade(a));
-		 sc.close();
+		 number = scanner.nextInt();
+		 System.out.print(markGrade(number));
+		 scanner.close();
 	 }
 
 }
