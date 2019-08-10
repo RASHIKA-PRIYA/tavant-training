@@ -4,10 +4,10 @@ import java.util.Scanner;
 public class Factorial {
 	public static class Factorialproblem {
 
-		static int CalculateFactorial(int a)
+		static int CalculateFactorial(int endingnumber)
 	{
 		int index,temp = 1;
-		for(index=1;index<=a;index++)
+		for(index=1;index<=endingnumber;index++)
 		{
 			temp=temp*index;
 		}
