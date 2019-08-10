@@ -4,20 +4,20 @@ import java.util.Scanner;
 
 public class Gradeverification {
 	       
-         public static String isPass(int a)
+         public static String isPass(int number)
 	       {
-	    	 if(a>=40)
+	    	 if(number>=40)
 	    		 return "Pass";
 	    	 else
 	    		 return "Fail";
 	       }
-	       public static String markGrade(int a)
+	       public static String markGrade(int number)
 	       {
-	    	   if(a>=90)
+	    	   if(number>=90)
 	    		   return "Grade A";
-	    	   else if(a>=75&&a<90)
+	    	   else if(number>=75&&number<90)
 	    		   return "Grade B";
-	    		   else if(a>=60&&a<75)
+	    		   else if(number>=60&&number<75)
 	    			   return "Grade C";
 	    			   else
 	    				   return "Grade D";
@@ -25,11 +25,11 @@ public class Gradeverification {
 	       public static void main(String[] args) {
 				
                Scanner scanner = new Scanner(System.in);
-	    	   int a;
+	    	   int number;
 	    	   System.out.println("Grade=");
-	    	   a = scanner.nextInt();
-	    	   System.out.println(isPass(a));
-	    	   System.out.println(markGrade(a));
+	    	   number = scanner.nextInt();
+	    	   System.out.println(isPass(number));
+	    	   System.out.println(markGrade(number));
 	    	   scanner.close();
 	       }
 	       
