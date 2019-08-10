@@ -14,13 +14,13 @@ public class Factorial {
 		return temp;
 	}
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int f;
+		Scanner scanner = new Scanner(System.in);
+		int number;
 		System.out.println("Enter the No : ");
 		
-		f =sc. nextInt();
-		System.out.println("Factorial ="+CalculateFactorial(f) );
-		sc.close();
+		number =scanner. nextInt();
+		System.out.println("Factorial ="+CalculateFactorial(number) );
+		scanner.close();
 		
 		}
 	}
