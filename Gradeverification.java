@@ -24,13 +24,13 @@ public class Gradeverification {
 	       }
 	       public static void main(String[] args) {
 				
-               Scanner sc = new Scanner(System.in);
+               Scanner scanner = new Scanner(System.in);
 	    	   int a;
 	    	   System.out.println("Grade=");
-	    	   a = sc.nextInt();
+	    	   a = scanner.nextInt();
 	    	   System.out.println(isPass(a));
 	    	   System.out.println(markGrade(a));
-	    	   sc.close();
+	    	   scanner.close();
 	       }
 	       
 	       }
